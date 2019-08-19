@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Neucha&display=swap');
+@import 'normalize';
+@import 'mixins';
+
+$powder:#efeae2;
+$grey-btn:#a3abb8;
+$text:#556c87;
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	height: 100%;
+}
+
+body {
+	font-family: 'Neucha', cursive;
+	font-size: 1.6rem;
+	line-height: 1;
+	color: #333;
+	min-height: 100%;
+	background-image: url(https://cdn1.vectorstock.com/i/1000x1000/13/40/todo-list-seamless-pattern-universal-background-vector-7561340.jpg);
+}
+h2{
+	font-family: 'Amatic SC', cursive;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 2.6rem;
+	margin: 10px;
+	padding: 0px;
+	
+}
+h1{
+	font-family: 'Amatic SC', cursive;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 3.6rem;
+	font-weight: bold;
+	margin: 10px;
+	padding: 0px;
+	
+}
+
+.container{
+	margin: 20px auto;
+	padding:20px 40px;
+	width: 60%;
+	border:1px solid #fff;
+	background-color: $powder;
+	color:$text;
+	border-radius:50px;
+	box-shadow: 20px 20px 20px rgba(0,102,153,1) ;
+}
+.task{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+}
+.todo{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+}
+.todos{
+	width: 45%;
+}
+.completed{
+	width: 45%;
+}
+ul{
+	list-style:none;
+	text-align: left;
+	padding: 0;
+	border:1px solid $grey-btn;
+border-radius:7px;
+}
+li{
+	display: inline-block;
+	width: 100%;
+	border:1px solid $grey-btn;
+	padding: 5px 10px;
+	vertical-align: middle;
+}
+button{
+	padding: 5px 20px;
+	background-color: $grey-btn;
+	color:$powder;
+	border-radius:7px;
+	margin-bottom: 15px;
+}
+input{
+	padding: 5px 20px;
+	border-radius:7px;
+}
